@@ -726,9 +726,9 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "C00lgui",
+	Name = "被遗弃",
 	Callback = function()
-     loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ivannetta/ShitScripts/main/PathfindGens.lua'))()
   	end    
 })
 
@@ -809,6 +809,33 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
+    Name = "其他脚本",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "叶脚本[不支持俄亥俄州]",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/roblox-ye/QQ515966991/refs/heads/main/ROBLOX-CNVIP-XIAOYE.lua"))()
+end
+})    
+
+Tab:AddButton({
+	Name = "叶脚本[支持俄亥俄州]",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/roblox-ye/QQ515966991/refs/heads/main/YE-%20Scripts-OHIO.lua"))()
+end
+})    
+
+Tab:AddButton({
+	Name = "云脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://github.com/CloudX-ScriptsWane/White-ash-script/raw/main/Beta.lua", true))()
+end
+})    
+
+local Tab = Window:MakeTab({
     Name = "光影",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -825,6 +852,19 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/ma
 end
 
 })
+
+local Tab = Window:MakeTab({
+    Name = "自然灾害模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "黑洞大全",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Asddffgujhh/-/refs/heads/main/BS'))()
+end
+})    
 
 local Tab = Window:MakeTab({
   Name = "DOORS脚本",
