@@ -738,15 +738,10 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-
 	Name = "光影V4",
-
 	Callback = function()
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
-
 end
-
 })
 
 local Tab = Window:MakeTab({
@@ -763,9 +758,9 @@ end
 })    
 
 Tab:AddButton({
-	Name = "吸附黑洞[输入别人名字可以让黑洞吸附他]",
+	Name = "丝滑黑洞",
 	Callback = function()
-https://rekonise.com/fe-blackhole-script-r1m76
+loadstring(game:HttpGet("https://pastefy.app/pYhER1z4/raw"))()
 end
 })
 
