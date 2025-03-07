@@ -149,54 +149,6 @@ local Section = Tab:AddSection({
 
 })
 
-Tab:AddSlider({
-
-	Name = "速度",
-
-	Min = 16,
-
-	Max = 200,
-
-	Default = 16,
-
-	Color = Color3.fromRGB(255,255,255),
-
-	Increment = 1,
-
-	ValueName = "数值",
-
-	Callback = function(Value)
-
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-
-	end    
-
-})
-
-Tab:AddSlider({
-
-	Name = "跳跃高度",
-
-	Min = 50,
-
-	Max = 200,
-
-	Default = 50,
-
-	Color = Color3.fromRGB(255,255,255),
-
-	Increment = 1,
-
-	ValueName = "数值",
-
-	Callback = function(Value)
-
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-
-	end    
-
-})
-
 Tab:AddTextbox({
 
 	Name = "跳跃高度设置",
@@ -360,30 +312,6 @@ Tab:AddButton({
 	Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/FPS-X-GUI/main/FPS_X.lua"))()
   	end    
-})
-
-Tab:AddButton({
-
-	Name = "变成蛇",
-
-	Callback = function()
-
-loadstring(game:HttpGet(('https://pastefy.ga/tWBTcE4R/raw'),true))()
-
-	end
-
-})
-
-Tab:AddButton({
-
-	Name = "让别让别人控制自己",
-
-	Callback = function()
-
-loadstring(game:HttpGet(('https://pastefy.ga/a7RTi4un/raw'),true))()
-
-	end
-
 })
 
 Tab:AddButton({
@@ -732,26 +660,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ivannetta/ShitScripts
   	end    
 })
 
-Tab:AddButton({
-	Name = "1x1x1x1",
-	Callback = function()
-     loadstring(game:HttpGet(('https://pastebin.com/raw/JipYNCht'),true))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "变玩家（R6）",
-	Callback = function()
-     loadstring(game:HttpGet("https://pastebin.com/raw/XR4sGcgJ"))()
-  	end    
-})
-Tab:AddButton({
-	Name = "动画中心",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
-  	end    
-})
-
 local Tab = Window:MakeTab({
     Name = "ESP及自瞄",
 	Icon = "rbxassetid://4483345998",
@@ -768,25 +676,6 @@ Name = "通用ESP",
 Callback = function()	
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()	
     end
-})
-
-Tab:AddButton({
-	Name = "最强透视",
-	Callback = function()
-       loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY"))()
-  	end    
-})
-
-Tab:AddButton({
-
-	Name = "透视",
-
-	Callback = function()
-
-     loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
-
-  	end    
-
 })
 
 local Section = Tab:AddSection({
@@ -835,6 +724,13 @@ loadstring(game:HttpGet("https://github.com/CloudX-ScriptsWane/White-ash-script/
 end
 })    
 
+Tab:AddButton({
+	Name = "皮脚本",
+	Callback = function()
+getgenv().XiaoPi="皮脚本QQ群1002100032" loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
+end
+})    
+
 local Tab = Window:MakeTab({
     Name = "光影",
 	Icon = "rbxassetid://4483345998",
@@ -863,6 +759,33 @@ Tab:AddButton({
 	Name = "黑洞大全",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Asddffgujhh/-/refs/heads/main/BS'))()
+end
+})    
+
+Tab:AddButton({
+	Name = "吸附黑洞[输入别人名字可以让黑洞吸附他]",
+	Callback = function()
+https://rekonise.com/fe-blackhole-script-r1m76
+end
+})
+
+Tab:AddButton({
+	Name = "环绕黑洞",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/suif666/ceshi/refs/heads/main/JR7RBh2a.lua"))()
+end
+})
+
+local Tab = Window:MakeTab({
+    Name = "死铁轨",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "外国脚本",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Just3itx/Lunor-Loadstrings/refs/heads/main/Loader'))()
 end
 })    
 
