@@ -648,16 +648,48 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "脚本汇总",
+	Name = "被遗弃",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "被遗弃",
+	Name = "被遗弃[情云]",
 	Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ivannetta/ShitScripts/main/PathfindGens.lua'))()
+loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\67\104\105\110\97\81\89\47\83\99\114\105\112\116\115\47\77\97\105\110\47\83\99\114\105\112\116"))()
   	end    
+})
+
+Tab:AddToggle({
+	Name = "夜视[建议搭配]",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+		else
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+		end
+	end
+})
+
+Tab:AddButton({
+	Name = "被遗弃[GAl]",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/longchneg/GAl/refs/heads/main/%E8%BF%90%E8%A1%8C%E5%99%A8"))()
+end
+})
+
+local Tab = Window:MakeTab({
+    Name = "噩梦学★恐鬼症",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "噩梦学★恐鬼症 通用",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/longchneg/GAl/refs/heads/main/%E8%BF%90%E8%A1%8C%E5%99%A8"))()
+end
 })
 
 local Tab = Window:MakeTab({
